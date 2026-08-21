@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kürek - Remote Administrative Staffing &amp; Solutions. We connect businesses with remote bilingual professionals for administrative support, customer service, and back-office." />
+  <title>Kürek | Remote Administrative Staffing & Solutions</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner container" aria-label="Main navigation">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo.png" alt="Kürek logo" />
+        <span class="brand__text">Kürek</span>
+      </a>
+      <nav class="glider-nav" aria-label="Sections">
+        <input type="radio" id="tab-home" name="tabs" checked />
+        <label class="glider-tab" for="tab-home"><a href="index.html">Home</a></label>
+        <input type="radio" id="tab-services" name="tabs" />
+        <label class="glider-tab" for="tab-services"><a href="#services">Services</a></label>
+        <input type="radio" id="tab-talent" name="tabs" />
+        <label class="glider-tab" for="tab-talent"><a href="#talent">Talent</a></label>
+        <input type="radio" id="tab-process" name="tabs" />
+        <label class="glider-tab" for="tab-process"><a href="#process">Process</a></label>
+        <input type="radio" id="tab-industries" name="tabs" />
+        <label class="glider-tab" for="tab-industries"><a href="#industries">Industries</a></label>
+        <input type="radio" id="tab-about" name="tabs" />
+        <label class="glider-tab" for="tab-about"><a href="#about">About</a></label>
+        <input type="radio" id="tab-contact" name="tabs" />
+        <label class="glider-tab" for="tab-contact"><a href="#contact">Contact</a></label>
+        <span class="glider"></span>
+      </nav>
+      <a href="https://forms.gle/jYCWCR3P4eFGJX9C8" class="btn btn--primary btn--sm nav-cta"><i class="fa-solid fa-paper-plane"></i> Join our team!</a>
+      <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="mobile-menu" aria-label="Mobile menu">
+    <a href="index.html" class="mobile-menu__link is-active">Home</a>
+    <a href="#services" class="mobile-menu__link">Services</a>
+    <a href="#talent" class="mobile-menu__link">Talent</a>
+    <a href="#process" class="mobile-menu__link">Process</a>
+    <a href="#industries" class="mobile-menu__link">Industries</a>
+    <a href="#about" class="mobile-menu__link">About</a>
+    <a href="#team" class="mobile-menu__link">Team</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+    <a href="https://forms.gle/jYCWCR3P4eFGJX9C8" class="btn btn--primary mobile-menu__cta">Join our team!</a>
+  </nav>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="site-banner">
+    <img src="assets/img/banner.png" alt="Kürek banner" />
+</section>
+
+    <section class="hero" id="home">
+      <div class="hero__grid container hero__grid--center">
+        <div class="hero__content">
+          <span class="hero__eyebrow"><i class="fa-solid fa-bolt"></i> Remote Talent. Bilingual Professionals. Administrative Solutions.</span>
+          <h1 class="hero__title">
+            Remote Administrative <span class="gradient-text">Staffing</span> &amp; Solutions
+          </h1>
+          <p class="hero__description">
+            <strong>The right people. The right support.</strong> Without the hiring burden.
+            We connect businesses with reliable, bilingual <strong>Spanish-English professionals</strong>
+            for remote administrative, customer service, technical support, and back-office positions.
+          </p>
+          <ul class="hero__checklist">
+            <li><i class="fa-solid fa-check"></i> Bilingual Spanish-English professionals</li>
+            <li><i class="fa-solid fa-check"></i> We handle selection, interviews &amp; onboarding</li>
+            <li><i class="fa-solid fa-check"></i> Ongoing follow-up so you focus on your business</li>
+          </ul>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary"><i class="fa-solid fa-user-plus"></i> Find Your Next Team Member</a>
+            <a href="#contact" class="btn btn--outline"><i class="fa-solid fa-comments"></i> Talk to Our Team</a>
+          </div>
+          <div class="hero__stats" aria-label="Metrics">
+            <div><div class="hero__stat-number">2025</div><div class="hero__stat-label">Founded</div></div>
+            <div><div class="hero__stat-number">100%</div><div class="hero__stat-label">Remote talent</div></div>
+            <div><div class="hero__stat-number">4</div><div class="hero__stat-label">Industries</div></div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <video autoplay muted loop playsinline preload="auto" poster="assets/img/banner.png">
+            <source src="assets/img/video-employability.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="hero__media-badge"><i class="fa-solid fa-play"></i> Remote Employability</div>
+        </div>
+      </div>
+    </section>
+<!-- ================= WHAT WE HANDLE ================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="what-grid">
+          <div class="what-group reveal">
+            <h2 class="what-group__heading">Your Business Needs People. <span>We Handle the Process.</span></h2>
+            <p class="hero__description">
+              Finding, hiring, training, and managing remote administrative talent can take valuable
+              time away from your business. That's where we come in.
+            </p>
+            <p class="hero__description">
+              We provide carefully selected remote professionals who can integrate directly into your
+              operations while we take care of the administrative side of the hiring process.
+            </p>
+            <div class="what-callout">
+              <i class="fa-solid fa-handshake"></i> You work with the employee. We take care of the rest.
+            </div>
+          </div>
+
+          <div class="what-group reveal">
+            <h3 style="font-weight:700; margin-bottom:1.2rem; font-size:1.2rem;">What we handle</h3>
+            <div class="what-list">
+              <div class="what-item"><span class="what-check"><i class="fa-solid fa-check"></i></span> Candidate sourcing and selection</div>
+              <div class="what-item"><span class="what-check"><i class="fa-solid fa-check"></i></span> Initial interviews and screening</div>
+              <div class="what-item"><span class="what-check"><i class="fa-solid fa-check"></i></span> Bilingual Spanish-English talent</div>
+              <div class="what-item"><span class="what-check"><i class="fa-solid fa-check"></i></span> Position matching</div>
+              <div class="what-item"><span class="what-check"><i class="fa-solid fa-check"></i></span> Training and onboarding</div>
+              <div class="what-item"><span class="what-check"><i class="fa-solid fa-check"></i></span> Performance follow-up</div>
+              <div class="what-item"><span class="what-check"><i class="fa-solid fa-check"></i></span> Client feedback coordination</div>
+              <div class="what-item"><span class="what-check"><i class="fa-solid fa-check"></i></span> Administrative support</div>
+              <div class="what-item"><span class="what-check"><i class="fa-solid fa-check"></i></span> Customer service &amp; phone-based communication</div>
+              <div class="what-item"><span class="what-check"><i class="fa-solid fa-check"></i></span> Back-office operations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REMOTE TALENT ================= -->
+    <section class="section section--soft" id="talent">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Remote Talent</span>
+          <h2 class="section__title">Remote Talent for the Work That <span class="gradient-text">Keeps Your Business Moving</span></h2>
+          <p class="section__subtitle">Our professionals can support a wide range of departments and responsibilities.</p>
+        </div>
+
+        <div class="talent-grid">
+          <article class="talent-card reveal">
+            <div class="talent-card__icon"><i class="fa-solid fa-phone"></i></div>
+            <h3 class="talent-card__title">Customer Service &amp; Phone Support</h3>
+            <p class="talent-card__description">Professionals experienced in inbound and outbound calls, customer assistance, appointment coordination, communication, and client support.</p>
+          </article>
+          <article class="talent-card reveal">
+            <div class="talent-card__icon talent-card__icon--blue"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3 class="talent-card__title">Administrative Support</h3>
+            <p class="talent-card__description">Data entry, documentation, scheduling, coordination, records management, email management, and day-to-day administrative operations.</p>
+          </article>
+          <article class="talent-card reveal">
+            <div class="talent-card__icon talent-card__icon--cyan"><i class="fa-solid fa-scale-balanced"></i></div>
+            <h3 class="talent-card__title">Legal Support</h3>
+            <p class="talent-card__description">Remote professionals capable of supporting law firms with customer service, liability assistance, documentation, case-related tasks, and client communication.</p>
+          </article>
+          <article class="talent-card reveal">
+            <div class="talent-card__icon talent-card__icon--blue"><i class="fa-solid fa-stethoscope"></i></div>
+            <h3 class="talent-card__title">Healthcare Support</h3>
+            <p class="talent-card__description">Administrative professionals experienced in healthcare environments, patient communication, scheduling, insurance-related processes, and back-office operations.</p>
+          </article>
+          <article class="talent-card reveal">
+            <div class="talent-card__icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3 class="talent-card__title">Technical Support</h3>
+            <p class="talent-card__description">Professionals available for technical customer service, troubleshooting assistance, account support, and communication-based technical roles.</p>
+          </article>
+          <article class="talent-card reveal">
+            <div class="talent-card__icon talent-card__icon--cyan"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+            <h3 class="talent-card__title">Financial &amp; Back-Office Support</h3>
+            <p class="talent-card__description">Administrative professionals capable of assisting with financial operations, documentation, customer communication, data management, and other back-office processes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US / PROCESS ================= -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Why Companies Choose Us</span>
+          <h2 class="section__title">One Partner. <span class="gradient-text">Less Administrative Work.</span></h2>
+          <p class="section__subtitle">Traditional hiring can require weeks of sourcing, interviewing, onboarding, and training. We streamline that process.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <div class="step-card__num">01</div>
+            <h3 class="step-card__title">We Find the Talent</h3>
+            <p class="step-card__text">We maintain an active pool of candidates ready to work across multiple industries and administrative functions.</p>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-card__num">02</div>
+            <h3 class="step-card__title">We Screen &amp; Interview</h3>
+            <p class="step-card__text">Candidates go through an initial selection and interview process before being presented for your consideration.</p>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-card__num">03</div>
+            <h3 class="step-card__title">We Prepare Them</h3>
+            <p class="step-card__text">We help ensure candidates understand the position, expectations, tools, and responsibilities before beginning their work.</p>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-card__num">04</div>
+            <h3 class="step-card__title">We Stay Involved</h3>
+            <p class="step-card__text">We don't disappear after placement. Every placement receives structured follow-up during the first two months, with an active feedback channel continuing after the probation period.</p>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-card__num">05</div>
+            <h3 class="step-card__title">You Focus on Your Business</h3>
+            <p class="step-card__text">Once the right professional is in place, you can focus on managing the work itself while we continue providing administrative support around the placement.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Industries ================= -->
+    <section class="section section--soft" id="industries">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Proven Across Multiple Industries</span>
+          <h2 class="section__title">Trusted by Businesses in <span class="gradient-text">Healthcare, Legal, Technical &amp; Financial</span></h2>
+          <p class="section__subtitle">Since our founding in September 2025, we have successfully placed remote professionals in multiple environments.</p>
+        </div>
+
+        <div class="industries">
+          <!-- Healthcare -->
+          <div class="industry reveal">
+            <h3 class="industry__title"><i class="fa-solid fa-stethoscope"></i> Healthcare</h3>
+            <div class="industry__client"><span class="industry__client-name">Genesis Orthopedics</span><span class="industry__client-count">2 Pros</span></div>
+            <div class="industry__client"><span class="industry__client-name">Synergy Orthopedics</span><span class="industry__client-count">1 Pro</span></div>
+            <div class="industry__client"><span class="industry__client-name">Consultants in Gastroenterology</span><span class="industry__client-count">1 Pro</span></div>
+            <div class="industry__total"><i class="fa-solid fa-check"></i> 5 professionals supporting healthcare operations</div>
+          </div>
+
+          <!-- Legal -->
+          <div class="industry reveal">
+            <h3 class="industry__title"><i class="fa-solid fa-scale-balanced"></i> Legal</h3>
+            <div class="industry__client"><span class="industry__client-name">Mokaram Law Firm</span><span class="industry__client-count">1 Pro</span></div>
+            <div class="industry__client"><span class="industry__client-name">Hemmat Law Group</span><span class="industry__client-count">1 Pro</span></div>
+          </div>
+
+          <!-- Technical -->
+          <div class="industry reveal">
+            <h3 class="industry__title"><i class="fa-solid fa-laptop-code"></i> Technical</h3>
+            <div class="industry__client"><span class="industry__client-name">Rebtel</span><span class="industry__client-count">1 Pro</span></div>
+            <div class="industry__client"><span class="industry__client-name">KingBee</span><span class="industry__client-count">1 Pro</span></div>
+          </div>
+
+          <!-- Financial -->
+          <div class="industry reveal">
+            <h3 class="industry__title"><i class="fa-solid fa-money-bill-trend-up"></i> Financial</h3>
+            <div class="industry__client"><span class="industry__client-name">Accessible Home Healthcare</span><span class="industry__client-count">1 Pro</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NICOLAS NEW PROCESS ================= -->
+    <section class="section" id="support">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Ongoing Support</span>
+          <h2 class="section__title">Our Placement Process Doesn't <span class="gradient-text">End on Day One</span></h2>
+          <p class="section__subtitle">We believe successful staffing is about more than finding someone who can do the job. That's why every placement receives continued support.</p>
+        </div>
+
+        <div class="support-grid">
+          <div class="support-item reveal">
+            <span class="support-item__badge">First 2 Months</span>
+            <h3 class="support-item__title">Structured Follow-Up</h3>
+            <p class="support-item__text">We conduct follow-up calls throughout the first two months to make sure the professional is adapting successfully and the client is satisfied with the placement.</p>
+          </div>
+          <div class="support-item reveal">
+            <span class="support-item__badge">After Probation</span>
+            <h3 class="support-item__title">Active Feedback Channel</h3>
+            <p class="support-item__text">Once the probation period is completed, we maintain an active feedback channel so issues, improvements, and new needs can be addressed.</p>
+          </div>
+          <div class="support-item reveal">
+            <span class="support-item__badge">Our Goal</span>
+            <h3 class="support-item__title">Long-Term Placements</h3>
+            <p class="support-item__text">Long-term placements. Better performance. Less work for our clients.</p>
+          </div>
+        </div>
+        <div class="support-goal reveal">Long-term placements. Better performance. Less work for our clients.</div>
+      </div>
+    </section>
+
+    <!-- ================= TEAM ================= -->
+    <section class="section section--soft" id="team">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Meet the Team</span>
+          <h2 class="section__title">The People Behind <span class="gradient-text">Kürek</span></h2>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <img src="assets/img/angel.jpg" alt="Angel Paniri" class="team-card__avatar" />
+            <h3 class="team-card__name">Angel Paniri</h3>
+            <div class="team-card__role">CEO &amp; Co-Founder</div>
+            <p class="team-card__bio">Responsible for company direction, client relationships, operations strategy, and the development of our remote staffing solutions.</p>
+          </div>
+
+          <div class="team-card reveal">
+            <h3 class="team-card__name">Micaela Serrano</h3>
+            <div class="team-card__role">HR Specialist &amp; Co-Founder</div>
+            <p class="team-card__bio">Focused on candidate sourcing, interviews, selection, onboarding, and ensuring the right professional is matched with every position.</p>
+          </div>
+
+          <div class="team-card reveal">
+            <h3 class="team-card__name">Nicolas Yune</h3>
+            <div class="team-card__role">COO &amp; Co-Founder</div>
+            <p class="team-card__bio">Oversees operational processes, placement coordination, workflow management, and the continued quality of our services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">About the Company</span>
+          <h2 class="section__title">About <span class="gradient-text">Kürek</span></h2>
+          <p class="section__subtitle">One partner. Less administrative work. We streamline the hiring process so you can focus on your business.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-story reveal">
+            <h3 class="about-story__title">Built to Remove the Weight of Hiring</h3>
+            <p class="about-story__text">
+              <strong>Kürek</strong> was founded to solve a problem that affects growing businesses
+              every day: finding reliable remote administrative talent without losing time, focus,
+              and money to a long, complicated hiring process.
+            </p>
+            <p class="about-story__text">
+              From day one, our work has been centered on a simple promise: we take care of the
+              administrative side of hiring, and you work directly with a professional who's
+              already ready to contribute from the start.
+            </p>
+          </div>
+          <div class="about-values reveal">
+            <h3 class="about-values__title">What We Value</h3>
+            <div class="about-values__list">
+              <div class="about-value">
+                <span class="about-value__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <div>
+                  <strong>Curated Talent</strong>
+                  <p>Every candidate is screened and matched to your specific needs before they reach you.</p>
+                </div>
+              </div>
+              <div class="about-value">
+                <span class="about-value__icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
+                <div>
+                  <strong>Partnership Over Placement</strong>
+                  <p>We stay involved after day one, following up so both you and your new hire succeed long-term.</p>
+                </div>
+              </div>
+              <div class="about-value">
+                <span class="about-value__icon"><i class="fa-solid fa-gauge-high"></i></span>
+                <div>
+                  <strong>Less Admin Work</strong>
+                  <p>Selection, interviews, onboarding, and follow-up — handled by us so you can focus on your business.</p>
+                </div>
+              </div>
+              <div class="about-value">
+                <span class="about-value__icon"><i class="fa-solid fa-globe"></i></span>
+                <div>
+                  <strong>Remote-First</strong>
+                  <p>We connect teams with dedicated bilingual professionals across borders, without geographic limits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--soft" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Get in Touch</span>
+          <h2 class="section__title">Build Your <span class="gradient-text">Remote Team</span></h2>
+          <p class="section__subtitle">Tell us about the position you're looking to fill. We'll help you find the right professional.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-info__item reveal">
+              <span class="contact-info__icon"><i class="fa-solid fa-envelope"></i></span>
+              <div>
+                <div class="contact-info__label">Email</div>
+                <div class="contact-info__value">hola@kurekstaffing.com</div>
+              </div>
+            </div>
+            <div class="contact-info__item reveal">
+              <span class="contact-info__icon"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <div class="contact-info__label">Phone</div>
+                <div class="contact-info__value">+54 (381) 522-2697</div>
+              </div>
+            </div>
+            <div class="contact-info__item reveal">
+              <span class="contact-info__icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <div class="contact-info__label">Location</div>
+                <div class="contact-info__value">Argentina</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form reveal">
+            <h2 class="contact-form__title">Ready to Work With Us?</h2>
+            <p class="contact-form__text">
+              Use our application form to tell us about the role you're looking to fill.
+            </p>
+            <a href="https://forms.gle/jYCWCR3P4eFGJX9C8" class="btn btn--primary contact-form__cta">
+              <i class="fa-solid fa-paper-plane"></i> Join our team!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/img/logo.png" alt="Kürek" />
+          <p>Remote Administrative Staffing &amp; Solutions. Helping businesses build reliable remote teams while taking the administrative burden out of the hiring process.</p>
+        </div>
+        <div>
+          <h4 class="footer__title">Company</h4>
+          <ul class="footer__links">
+            <li><a href="#home" class="footer__link">Home</a></li>
+            <li><a href="#services" class="footer__link">Services</a></li>
+            <li><a href="#process" class="footer__link">Process</a></li>
+            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Specialties</h4>
+          <ul class="footer__links">
+            <li><a href="#talent" class="footer__link">Customer Service</a></li>
+            <li><a href="#talent" class="footer__link">Administrative Support</a></li>
+            <li><a href="#talent" class="footer__link">Technical Support</a></li>
+            <li><a href="#talent" class="footer__link">Back-Office</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Connect</h4>
+          <p style="font-size:0.9rem; color:#94a3b8; margin-bottom:1rem;">Founded in 2025</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer__social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer__social" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; <span data-year>2025</span> Kürek · Remote Administrative Staffing &amp; Solutions. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
