@@ -527,7 +527,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 }
 .wave-group .label-char { transition: 0.2s ease all; transition-delay: calc(var(--index) * 0.05s); }
 .wave-group .input:focus ~ .label .label-char,
-.wave-group .input:valid ~ .label .label-char {
+.wave-group .input:not(:placeholder-shown) ~ .label .label-char {
   transform: translateY(-20px);
   font-size: 0.8rem;
   color: #5264ae;
@@ -549,6 +549,25 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 @media (max-width: 640px) {
   .wave-group .input { font-size: 0.95rem; }
 }
+
+/* ============ FORMULARIO CONTACTO (nativo) ============ */
+.contact-form__fields {
+  width: 100%;
+  max-width: 360px;
+  text-align: left;
+}
+.contact-form .wave-group {
+  width: 100%;
+}
+.wave-group textarea.input {
+  resize: vertical;
+  min-height: 60px;
+  line-height: 1.5;
+}
+.wave-group textarea.input ~ .label {
+  top: 10px;
+}
+
 
 /* ============================================================
 

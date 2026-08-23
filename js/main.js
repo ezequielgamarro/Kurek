@@ -122,41 +122,71 @@ document.addEventListener("DOMContentLoaded", () => {
     counters.forEach((el) => counterObserver.observe(el));
   }
 
-  // 5. Contact form removed - uses external application form.
+  // 5. Contact form -> Power Automate Webhook (HTTP POST, JSON)
+  // Reemplaza esta URL por el Endpoint de tu flujo en Power Automate.
+  const WEBHOOK_URL = "https://prod-xx.westus.logic.azure.com:443/workflows/XXXX/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=XXXX";
+
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
+    contactForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       const status = document.getElementById("formStatus");
       const name = contactForm.querySelector("#name");
       const email = contactForm.querySelector("#email");
+      const phone = contactForm.querySelector("#phone");
+      const country = contactForm.querySelector("#country");
+      const linkedin = contactForm.querySelector("#linkedin");
       const message = contactForm.querySelector("#message");
 
       // Validacion basica
-      if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
+      if (!name.value.trim() || !email.value.trim() || !phone.value.trim() || !country.value.trim() || !message.value.trim()) {
         status.textContent = "Please complete all required fields.";
         status.className = "form-status is-visible form-status--error";
         return;
       }
 
-      // Simular envio
+      // Estado "Enviando..."
       const btn = contactForm.querySelector("button[type='submit']");
       const labelSpan = btn.querySelector("span");
       const originalText = labelSpan ? labelSpan.textContent : btn.textContent;
       if (labelSpan) labelSpan.textContent = "Sending...";
       btn.disabled = true;
+      status.textContent = "";
+      status.className = "form-status";
 
-      setTimeout(() => {
+      // Datos a enviar en JSON
+      const payload = {
+        name: name.value.trim(),
+        email: email.value.trim(),
+        phone: phone.value.trim(),
+        country: country.value.trim(),
+        linkedin: linkedin.value.trim() || "N/A",
+        message: message.value.trim(),
+        submittedAt: new Date().toISOString(),
+        source: window.location.href,
+      };
+
+      try {
+        const response = await fetch(WEBHOOK_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+
+        if (!response.ok) throw new Error("HTTP " + response.status);
+
         status.textContent = "Message sent successfully! We will contact you soon.";
         status.className = "form-status is-visible form-status--success";
         contactForm.reset();
+      } catch (err) {
+        console.error("Webhook error:", err);
+        status.textContent = "Something went wrong. Please try again.";
+        status.className = "form-status is-visible form-status--error";
+      } finally {
         if (labelSpan) labelSpan.textContent = originalText;
         btn.disabled = false;
-
-        setTimeout(() => {
-          status.className = "form-status";
-        }, 6000);
-      }, 1200);
+        setTimeout(() => { status.className = "form-status"; }, 6000);
+      }
     });
   }
 
